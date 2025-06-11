@@ -1,0 +1,232 @@
+/* Réinitialisation et structure */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* En-tête */
+.site-header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: relative;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: #b8860b;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+/* Section principale (Hero) */
+.hero {
+  position: relative;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 90%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+/* Section Services avec images en arrière-plan */
+.service-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.service-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.service-overlay h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.service-overlay p {
+  font-size: 1.1rem;
+}
+
+/* Images spécifiques pour chaque service */
+.service-hero.travaux {
+  background-image: url('images/travaux.jpg');
+}
+
+.service-hero.miniers {
+  background-image: url('images/engin1.jpg');
+}
+
+.service-hero.transport {
+  background-image: url('images/r5.jpg');
+}
+
+/* Service section with inline images */
+.service-block {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Responsive image layout */
+@media (max-width: 768px) {
+  .service-block {
+    flex-direction: column;
+  }
+
+  .service-image {
+    max-width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #2f4f4f;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+/* Responsive navigation */
+@media (max-width: 768px) {
+  .site-header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-direction: column;
+    display: none;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu-icon + .menu {
+    display: flex;
+  }
+
+  .submenu {
+    position: static;
+    border: none;
+  }
+}
