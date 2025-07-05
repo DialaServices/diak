@@ -13,36 +13,151 @@
       <div class="logo">
         <img src="IMG-20230823-WA0011.jpg" alt="Logo Diala Services" />
       </div>
-      <nav class="navbar">
-        <input type="checkbox" id="menu-toggle" />
-        <label for="menu-toggle" class="menu-icon">&#9776;</label>
-        <ul class="menu">
-          <li><a href="#accueil">Accueil</a></li>
-          <li class="has-submenu">
-            <a href="#services">Services</a>
-            <ul class="submenu">
-              <li><a href="#construction">Construction & BTP</a></li>
-              <li><a href="#location">Location minière</a></li>
-              <li><a href="#transport">Transport & logistique</a></li>
-            </ul>
-          </li>
-          <li><a href="#a-propos">À propos</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      
+
+                             <!-- ORDINATEUR-->
+
+        <div class="ordinateur">
+     <ul class="menu">
+  <li><a href="#accueil">Accueil</a></li>
+
+  <!-- Services avec sous-menu -->
+  <li class="has-submenu">
+    <a>Services</a>
+    <ul class="submenu">
+      <li><a href="#construction">Travaux & BTP</a></li>
+      <li><a href="#location">Matériel minier</a></li>
+      <li><a href="#transport">Transport & logistique</a></li>
+      <li><a href="#conseil">Conseil et études</a></li> <!-- optionnel -->
+    </ul>
+  </li>
+
+  <li><a href="#projets">Projets</a></li>
+
+  <!-- L'entreprise avec sous-menu -->
+  <li class="has-submenu">
+    <a>L'entreprise</a>
+    <ul class="submenu">
+      <li><a href="#a-propos">À propos</a></li>
+      <li><a href="#mission">Mission</a></li>
+      <li><a href="#engagements">Nos engagements</a></li>
+    </ul>
+  </li>
+
+  <li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+                                          <!-- TELEPHONE-->
+<div class="telephone">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+  <ul class="menu">
+    <li><a href="#accueil">Accueil</a></li>
+
+    <!-- Services avec sous-menu -->
+    <li class="has-submenu">
+      <a href="#">Services</a>
+      <ul class="submenu">
+        <li><a href="#construction">Travaux & BTP</a></li>
+        <li><a href="#location">Matériel minier</a></li>
+        <li><a href="#transport">Transport & logistique</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#a-propos">À propos</a></li>
+    <li><a href="#mission">Mission</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
     </div>
   </header>
 
  <section class="hero" id="accueil">
   <img src="images/struc.jpg" alt="Image d'accueil" class="hero-background" />
   <div class="hero-overlay">
-    <h1>Bienvenue chez Diala Services</h1>
-    <p>Votre partenaire de confiance pour le BTP, la location de matériel et la logistique au Mali.</p>
+    <div class="hero-content">
+      <h1>Bienvenue chez Diala Services</h1>
+      <p>Votre partenaire de confiance pour le BTP, la location de matériel et la logistique au Mali.</p>
+    </div>
   </div>
 </section>
 
-<section id="services" class="section">
+<h2 class="ser">Nos Services</h2>
+<section id="services" class="news-section">
+  
+
+  <div class="news-card" id="construction">
+    <a href="images/travaux.jpg" title="Travaux de construction">
+      <img src="images/travaux.jpg" alt="Travaux de construction et BTP" />
+    </a>
+    <div class="card-content">
+      <h3>🔨 Travaux de construction et BTP</h3>
+      <p>
+        Réalisation complète de projets de construction : des fondations aux finitions. Engagement sur la qualité, le détail et le respect des délais.
+      </p>
+      <div class="card-footer">
+        <span class="date">Juillet 2025</span>
+        <a href="#construction" class="link">➜ En savoir plus</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card" id="location">
+    <a href="images/engin1.jpg" title="Matériel minier">
+      <img src="images/engin1.jpg" alt="Location de matériels miniers" />
+    </a>
+    <div class="card-content">
+      <h3>🚜 Location de matériels miniers</h3>
+      <p>
+        Mise à disposition d’un parc de matériel minier moderne. Adapté aux projets miniers exigeants.
+      </p>
+      <div class="card-footer">
+        <span class="date">Juillet 2025</span>
+        <a href="#location" class="link">➜ En savoir plus</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card" id="transport">
+    <a href="images/r5.jpg" title="Transport et logistique">
+      <img src="images/r5.jpg" alt="Transport et logistique" />
+    </a>
+    <div class="card-content">
+      <h3>🚚 Transport et logistique</h3>
+      <p>
+        Services de transport de matériaux et équipements. Logistique fluide et fiable pour assurer la bonne exécution des projets.
+      </p>
+      <div class="card-footer">
+        <span class="date">Juillet 2025</span>
+        <a href="#transport" class="link">➜ En savoir plus</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card" id="conseil">
+  <a href="images/assistance.jpg" title="Conseil et études">
+    <img src="images/assistance.jpg" alt="Conseil et études techniques" />
+  </a>
+  <div class="card-content">
+    <h3>📊 Conseil & Études techniques</h3>
+    <p>
+      Accompagnement stratégique et technique pour vos projets. Études de faisabilité, ingénierie, planification et optimisation des ressources.
+    </p>
+    <div class="card-footer">
+      <span class="date">Juillet 2025</span>
+      <a href="#conseil" class="link">➜ En savoir plus</a>
+    </div>
+  </div>
+</div>
+
+
+</section>
+
+
+
+<!--<section id="services" class="section">
   <h2>Nos Services</h2>
 
   <div class="service-hero travaux">
@@ -65,32 +180,132 @@
       <p>Services de transport de matériaux et équipements. Logistique fluide et fiable pour assurer la bonne exécution des projets.</p>
     </div>
   </div>
+</section>-->
+
+
+    <section id="a-propos" class="section-pro">
+    <div class="section-image">
+      <img src="images/option.jpg" alt="Élevage" class="qualite">
+    </div>
+  <h2>À propos de nous</h2>
+  <p>
+    <strong>Diala Services</strong> est une entreprise malienne de référence, spécialisée dans les travaux de BTP, la logistique et la location de matériel minier. Forte d’une expertise solide et d’une équipe engagée, elle accompagne ses clients dans la réalisation de projets ambitieux et durables, sur tout le territoire national.
+  </p>
+  <p>
+    Nous plaçons la qualité, la sécurité et le respect des délais au cœur de nos engagements, tout en intégrant des pratiques responsables et respectueuses de l’environnement.
+  </p>
+</section>
+
+<section class="mission-section">
+  <div class="mission-container">
+    <div class="mission-image">
+      <img src="images/trav.jpg" alt="Travaux BTP" />
+    </div>
+    <div class="mission-text">
+      <h2 class="mission-title">Notre mission</h2>
+      <p>
+        Offrir des <strong>solutions innovantes, durables et sur mesure</strong>
+        dans les domaines de la construction, du transport et des services industriels.
+      </p>
+      <p>
+        Chez Diala Services, notre mission repose sur trois piliers essentiels :
+      </p>
+      <ul class="mission-list">
+        <li><span class="icon">✔️</span> <strong>Intégrité</strong> dans toutes nos actions et partenariats</li>
+        <li><span class="icon">💡</span> <strong>Innovation</strong> pour relever les défis techniques</li>
+        <li><span class="icon">🏗️</span> <strong>Qualité</strong> pour bâtir avec fiabilité et confiance</li>
+      </ul>
+      <a href="#construction" class="mission-btn">Découvrir nos services</a>
+    </div>
+  </div>
 </section>
 
 
-    <section id="a-propos" class="section">
-      <h2>À propos de nous</h2>
-      <p>Diala Services est une entreprise malienne spécialisée dans le BTP, la logistique et la location de matériel minier. Depuis sa création, elle s’engage à fournir des prestations de qualité tout en respectant les normes de sécurité et de durabilité.</p>
-    </section>
+<section id="contact" class="contact-section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Contact</h2>
+      <address>
+        <p><strong>Adresse :</strong> Hèrèmakono, Bougouni, Mali</p>
+        <p><strong>Téléphone :</strong> </p>
+        <ul>
+          <li>+223 78 52 89 73</li>
+          <li>+223 66 99 55 31</li>
+        </ul>
+        <p><strong>Email :</strong> <a href="mailto:dcartcomp@gmail.com" class="email-link">servicediala@gmail.com</a>
+</p>
+        <p><strong>Horaires :</strong> Lundi – Vendredi : 8h – 17h30</p>
+      </address>
+    </div>
 
-    <section id="mission" class="section">
-      <h2>Notre mission</h2>
-      <p>Fournir des solutions innovantes et durables dans le domaine de la construction. Mettre l'accent sur l’intégrité, l’innovation, et la qualité.</p>
-    </section>
+    <div class="contact-image">
+            <img src="images/contact.png" alt="Diala Services">
+    </div>
+  </div>
+  
+</section>
+
 
     
-  </main>
 
-  <footer>
-    <h3>Suivez-nous</h3>
-    <p>Retrouvez-nous sur les réseaux sociaux :</p>
-    <div class="social-icons">
-      <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
-      <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
-      <a href="#"><img src="icons/x-twitter.svg" alt="Twitter" /></a>
-      <a href="#"><img src="icons/whatsapp.svg" alt="WhatsApp" /></a>
-    </div>
-    <p>&copy; 2025 Diala Services. Tous droits réservés.</p>
-  </footer>
+
+<footer class="site-footer hidden-footer">
+  <div class="footer-container">
+    <p class="signature-link typewriter fade-text">
+  <a href="politique-confidentialite.html">Politique de confidentialité</a>/<a href="conditions-utilisation.html">Conditions d'utilisation</a>
+</p>
+  </div>
+
+  <div class="social-icons animated-icons">
+   <!-- Bouton WhatsApp -->
+<a href="https://wa.me/22378528973?text=Bonjour!%20Je%20souhaite%20en%20savoir%20plus%20sur%20votre%20site%20web."
+   target="_blank"
+   class="social-button whatsapp-button"
+   aria-label="Contactez-nous sur WhatsApp">
+  <img src="icone/wa.png" alt="WhatsApp" />
+</a>
+
+<!-- Bouton Facebook -->
+<a href="https://web.facebook.com/ibrahimdjime.diakite.3"
+   target="_blank"
+   class="social-button facebook-button"
+   aria-label="Partager sur Facebook">
+  <img src="icone/facebook.png" alt="Facebook" />
+</a>
+
+<!-- Bouton Twitter -->
+<a href="https://twitter.com/DiakitIbra19810"
+   target="_blank"
+   class="social-button twitter-button"
+   aria-label="Partager sur Twitter">
+  <img src="icone/x.png" alt="Twitter" />
+</a>
+
+<!-- Bouton Instagram -->
+<a href="https://www.instagram.com/ibrahim_djime_diakite"
+   target="_blank"
+   class="social-button instagram-button"
+   aria-label="Voir Instagram">
+  <img src="icone/insta.png" alt="Instagram" />
+</a>
+
+<!-- Bouton TikTok -->
+<a href="https://www.tiktok.com/@dialadiakite3"
+   target="_blank"
+   class="social-button tiktok-button"
+   aria-label="Partager sur TikTok">
+  <img src="icone/tiktok.png" alt="TikTok" />
+</a>
+  </div>
+
+  <p class="footer-signature fade-text">
+  &copy; 2025 Diala Services. Site conçu par
+  <a class="typewriter" href="https://wa.me/22376856631?text=Bonjour!...">Ibrahim Djimé Diakité</a>.
+</p>
+</footer>
+
+
+<script src="dja.js"></script>
+
 </body>
 </html>
